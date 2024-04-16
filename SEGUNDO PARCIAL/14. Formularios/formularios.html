@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--Formularios en HTML5-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML5</title>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <h1>FORMULARIOS EN HTML</h1>
+        <article>
+            <form name="frmformularios" id="frmformularios" method="get" action="">
+                <!--Metodo get manda los datos en cadena, se ven los datos / Metodo post manda los datos encriptados-->
+                Escriba su nombre Completo: <input name="txtnombrecompleto" id="txtnombrecompleto" type="text"><br>
+
+                Escriba su nombre Completo [LETRAS MAYUSCULAS] <input name="txtnombrecompleto2" id="txtnombrecompleto2"
+                    type="text" required autofocus minlength="14" maxlength="60" autocomplete="off"
+                    placeholder="Escriba su nombre completo en  Mayusculas" size="100%" pattern="[A-Z ]{14,60}"
+                    title="Por favor ingrese letras mayusculas o >=14, <=60 caracteres"><br>
+                <!--Required=Requerido obligatorio, Autofocus enfoque de puntero, minlength/maxlength min y max de caracteres, autocomplete Off no autocompletar, placeholder ayuda de texto, pattern="[A-Z ]{14,60}" valida los caracteres-->
+
+                Escriba su nombre completo (Solo Minusculas): <input name="txtnombrecompleto3" id="txtnombrecompleto3"
+                    type="text" required minlength="14" maxlength="60" autocomplete="off"
+                    placeholder="Escriba su nombre completo en Minusculas" size="100%" pattern="[a-z ]{14,60}"
+                    title="Ingrese solo letras Minúsculas, entre 14 a 60 letras"><br>
+
+                Escriba su nombre completo (Mayusculas y Minusculas): <input name="txtnombrecompleto4"
+                    id="txtnombrecompleto4" type="text" required minlength="14" maxlength="60" autocomplete="off"
+                    placeholder="Escriba su nombre completo en Mayusculas y Minusculas" size="100%"
+                    pattern="[a-z A-Z]{14,60}"
+                    title="Ingrese solo letras Mayusculas y Minusculas, entre 14 a 60 letras"><br>
+
+                Escriba su nombre completo y Edad (Mayusculas, Minusculas y Numeros): <input name="txtnombrecompleto5"
+                    id="txtnombrecompleto5" type="text" required minlength="14" maxlength="60" autocomplete="off"
+                    placeholder="Escriba su nombre completo en Mayusculas, Minusculas y Numeros" size="100%"
+                    pattern="[a-z A-Z 1-9]{14,60}"
+                    title="Ingrese solo letras Mayusculas, Minúsculas, y Numeros, entre 14 a 60 letras"><br>
+
+                <label for="txtedad">Escriba su edad (Solo números):</label>
+                <input type="text" name="txtedad" id="txtedad" required minlength="1" maxlength="5"
+                    placeholder="Escriba su edad" size="100%" pattern="[0-9]{1,5}"
+                    title="Por favor escriba solo números"><br>
+
+                <label for="txtedad2">Escriba su edad (Solo números) ejemplo2:</label>
+                <input type="text" name="txtedad2" id="txtedad2" required value="15" readonly><br>
+                <!--readonly campo solo lectura-->
+
+                <label for="txtpassword">Escriba una clave de ingreso:</label>
+                <input type="password" name="txtpassword" id="txtpassword"><br>
+
+                <!--Este dato no se ve en pantalla pero si viaja del lado del servidor algun calculo o dato extra-->
+                <input type="hidden" value="sdfgjsdgorhgaelghe" id="txtdatooculto" name="txtdatooculto">
+                <br>
+
+                <!--Control Radio por Omision-->
+                <label for="txtuniversidad">Selecciones una Universidad</label><br>
+                <input type="radio" name="txtuniversidad" id="txtuniversidad" value="1">UTH<br>
+                <input type="radio" name="txtuniversidad" id="txtuniversidad" value="2">UNITEC<br>
+                <input type="radio" name="txtuniversidad" id="txtuniversidad" value="3">USAP<br>
+                <input type="radio" name="txtuniversidad" id="txtuniversidad" value="4">UNAH<br>
+
+                <!--Control Radio por Omision usando otros atributos-->
+                <label for="txtuniversidad2">Selecciones una Universidad [Opcion 2]</label><br>
+                <input type="radio" name="txtuniversidad2" id="txtuniversidad2" value="1" checked>UTH<br>
+                <input type="radio" name="txtuniversidad2" id="txtuniversidad2" value="2">UNITEC<br>
+                <input type="radio" name="txtuniversidad2" id="txtuniversidad2" value="3">USAP<br>
+                <input type="radio" name="txtuniversidad2" id="txtuniversidad2" value="4" required>UNAH<br>
+                <!--required se puede poner en cualquiera de los radiobotones
+                checked para seleccionar un datos por default-->
+                <br>
+
+                <!--Casillas de Verificacion-->
+                <label for="txtpregunta">Son Caracteristicas de un virus Informatico</label><br>
+                <input type="checkbox" name="txtpassword" id="txtpregunta" value="1">Es un programa informatico<br>
+                <input type="checkbox" name="txtpassword2" id="txtpregunta2" value="2">Puede dañar Hardware<br>
+                <input type="checkbox" name="txtpassword3" id="txtpregunta3" value="3">Se trata de una fruta<br>
+
+                <!--Casillas de Verificacion Otros atributos-->
+                <label for="txtpregunta">Son Caracteristicas de un virus Informatico [Opcion 2]</label><br>
+                <input type="checkbox" name="txtpassword4" id="txtpregunta4" value="1" required checked>Es un programa
+                informatico<br>
+                <input type="checkbox" name="txtpassword5" id="txtpregunta5" value="2">Puede dañar Hardware<br>
+                <input type="checkbox" name="txtpassword6" id="txtpregunta6" value="3">Se trata de una fruta<br>
+                <!--required se coloca al que check que seria obligatorio
+                checked para seleccionar un datos por default-->
+                <br><br>
+
+                <!--Botones-->
+                <h2>Control de Boton</h2>
+                <input type="button" name="btcalcular" id="btcalcular" value="Mostrar Mensaje" onclick="alert('UTH');">
+                <!--Onclic Evento JS-->
+                <h2>Control de Boton con Imagen</h2>
+                <input type="image" src="imagenes/exito.png" width="5%" height="5%"
+                    onmouseover="alert('UTH\nTu Universidad');">
+                <br>
+
+                <!--Spinner-->
+                <h2>Control de Entrada [Numero] por Omision</h2>
+                <input type="number" name="txtnum1" id="txtnum1"><br>
+
+                <h2>Control de Entrada [Numero] Valor min 1 y max 50 Sec. 1 en 1</h2>
+                <input type="number" name="txtnum2" id="txtnum2" max="50" min="1" step="1"><br>
+
+                <h2>Control de Entrada [Numero] Valor min 2 y max 20 Sec. 2 en 2</h2>
+                <input type="number" name="txtnum3" id="txtnum3" max="20" min="2" step="2"><br>
+
+                <h2>Control de Entrada [Numero] Valor min 0.1 y max 10.1 Sec. 0.1 en 0.1</h2>
+                <input type="number" name="txtnum4" id="txtnum4" max="10.1" min="0.1" step="0.1" pattern="[1-9]"><br>
+                <br>
+
+                <h2>Control entrada [Numero] Listas desplegables</h2>
+                <label for="txtnum5">Escriba un valor entre 1 y 10</label><br>
+                <input type="number" name="txtnum5" id="txtnum5" min="1" max="10" list="colnum" required
+                    pattern="[0-9]"><br>
+                <!--List para definir la lista
+                datalist para colocar los valores de la lista-->
+                <datalist id="colnum">
+                    <option label="1" value="1"></option>
+                    <option label="2" value="2"></option>
+                    <option label="3" value="3"></option>
+                    <option label="4" value="4"></option>
+                    <option label="5" value="5"></option>
+                    <option label="6" value="6"></option>
+                    <option label="7" value="7"></option>
+                    <option label="8" value="8"></option>
+                    <option label="9" value="9"></option>
+                    <option label="10" value="10"></option>
+                </datalist>
+                <br>
+
+                <h2>Control de Fecha</h2>
+                <label for="txtfecha1">Seleccione una Fecha:</label><br>
+                <input type="date" name="txtfecha1" id="txtfecha1">
+                <br>
+
+                <h2>Control de Fecha Atributos</h2>
+                <label for="txtfecha2">Seleccione una Fecha[Opcion2]:</label><br>
+                <input type="date" name="txtfecha2" id="txtfecha2" value="2023-03-03" min="2023-01-01" max="2023-12-31">
+                <br>
+
+                <h2>Control de Mes</h2>
+                <label for="txtmes1">Seleccione un mes:</label><br>
+                <input type="month" name="txtmes1" id="txtmes1">
+                <br>
+
+                <h2>Control de Mes Atributos</h2>
+                <label for="txtmes2">Seleccione un mes:</label><br>
+                <input type="month" name="txtmes2" id="txtmes2" value="2023-11" min="2023-01" max="2023-12">
+                <br>
+
+                <h2>Control de Semana</h2>
+                <label for="txtasemana1">Seleccione Semana:</label><br>
+                <input type="week" name="txtsemana1" id="txtsemana1">
+                <br>
+
+                <h2>Control de Semana Atributos</h2>
+                <label for="txtsemana2">Seleccione Semana:</label><br>
+                <input type="week" name="txtsemana2" id="txtsemana2" value="2023-W05" min="2023-W01" max="2023-W52">
+                <br>
+
+                <h2>Control de Hora por Omision</h2>
+                <label for="txthora1">Seleccione una hora</label>
+                <input type="time" name="txthora1" id="txthora1"><br>
+
+                <h2>Control de Hora con Atributos</h2>
+                <label for="txthora2">Seleccione una hora</label>
+                <input type="time" name="txthora2" id="txthora2" value="15:00" min="13:00" max="21:00"><br>
+
+                <h2>Control de lista Desplegable por Omision</h2>
+                <label for="txtequipos1">Seleccione su equipo favorito</label>
+                <select name="txtequipos1" id="txtequipos1">
+                    <option>Olimpia</option>
+                    <option>Motagua</option>
+                    <option>Real España</option>
+                    <option>Maraton</option>
+                    <option>Vida</option>
+                </select><br>
+
+                <h2>Control de lista desplegable Multiple</h2>
+                <label for="txtequipos2">Seleccione su equipo favorito</label>
+                <select name="txtequipos2" id="txtequipos2" multiple>
+                    <option>Olimpia</option>
+                    <option>Motagua</option>
+                    <option>Real España</option>
+                    <option>Maraton</option>
+                    <option>Vida</option>
+                </select><br>
+
+                <h2>Control de lista desplegable con valor Predeterminado</h2>
+                <label for="txtequipos4">Seleccione su equipo favorito</label>
+                <select name="txtequipos4" id="txtequipos4">
+                    <option>Olimpia</option>
+                    <option>Motagua</option>
+                    <option>Real España</option>
+                    <option selected>Maraton</option>
+                    <option>Vida</option>
+                </select><br>
+
+                <h2>Control de lista desplegable con Grupos y Etiquetas</h2>
+                <label for="txtequipos3">Seleccione su equipo favorito</label>
+                <select name="txtequipos3" id="txtequipos3">
+                    <optgroup label="EQUIPOS ZONA NORTE">
+                        <option>Real España</option>
+                        <option>Marathon</option>
+                    </optgroup>
+                    <optgroup label="EQUIPOS ZONA SUR">
+                        <option value="OL">Olimpia</option>
+                        <option value="MT">Motagua</option>
+                    </optgroup>
+                </select>
+                <br>
+
+                <h2>Control de Color por Omision</h2>
+                <label for="txtcolor">Selecciones un color</label><br>
+                <input type="color" name="txtcolor" id="txtcolor">
+
+                <h2>Control de Color con Datalist</h2>
+                <label for="txtcolor2">Selecciones un color2</label><br>
+                <input type="color" name="txtcolor2" id="txtcolor2" list="colores" value="#FFFFFF">
+                <datalist id="colores">
+                    <option label="Color1" value="#111111"></option>
+                    <option label="Color2" value="#124578"></option>
+                    <option label="Color3" value="#785412"></option>
+                    <option label="Color4" value="#998325"></option>
+                    <option label="Color5" value="#FF1234"></option>
+                    <option label="Color6" value="#A2564A"></option>
+                    <option label="Color7" value="#C65D85"></option>
+                    <option label="Color8" value="#FF9654"></option>
+                    <option label="Color9" value="#AAD896"></option>
+                    <option label="Color10" value="#ABF125"></option>
+                </datalist>
+
+                <h2>Control de TextArea por Omision</h2>
+                <label for="txtcomentarios1">Escriba su comentario</label><br>
+                <textarea name="txtcomentarios1" id="txtcomentarios1"></textarea>
+
+                <h2>Control de TextArea Atributos</h2>
+                <label for="txtcomentarios2">Escriba su comentario</label><br>
+                <textarea name="txtcomentarios2" id="txtcomentarios2" cols="50" rows="4" maxlength="100"></textarea>
+                <br>
+
+                <h2>Control por Omision para Telefono</h2>
+                <label for="txttel1">Escriba un numero de celular</label>
+                <input type="tel" name="txttel1" id="txttel1"><br>
+
+                <h2>Control de Telefono usando formatos </h2>
+                <label for="txttel2">Escriba un numero de celular para el pais de Honduras con el formato: +504-9999-9999</label>
+                <input type="tel" name="txttel2" id="txttel2" pattern="[+0-9]{4}-[0-9]{4}-[0-9]{4}"><br>
+               
+                <h2>Control Numero de Telefono con Formato y Datalist</h2>
+                <label for="txttel3">Escriba su telefono +000-0000-0000, seleccione el area de su país:</label>
+                <input type="tel" name="txttel3" id="txttel3" pattern="[+0-9]{4}-[0-9]{4}-[0-9]{4}" list="codpais">
+                <datalist id="codpais">
+                    <option label="Belice +501" value="+501-"></option>
+                    <option label="Guatemala +502" value="+502-"></option>
+                    <option label="El Salvador +503" value="+503-"></option>
+                    <option label="Honduras +504" value="+504-"></option>
+                    <option label="Nicaragua +505" value="+505-"></option>
+                    <option label="Costa Rica +506" value="+506-"></option>
+                    <option label="Panamá +507" value="+507-"></option>
+                </datalist>
+                <br>
+
+                <h2>Control de Correo</h2>
+                <label for="txtemail1">Escriba su correo electronico:</label>
+                <input type="email" name="txtemail1" id="txtemail1"><br>
+
+                <h2>Control de URL</h2>
+                <label for="txturl1">Escriba la URL de su Cia.:</label>
+                <input type="url" name="txturl1" id="txturl1"><br>
+
+                <br><br>
+                <input type="submit" name="btenviar" id="btenviar" value="Enviar">
+                <input type="reset" name="btreset" id="btreset" value="Limpiar">
+            </form>
+        </article>
+    </section>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>

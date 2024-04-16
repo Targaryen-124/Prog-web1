@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- SELECTOR ADYACENTE EN CSS -->
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Selector ADYACENTE en CSS</title>
+
+    <!-- A) El selector adyacente se aplica con el signo "+" como podemos ver 
+        en el ejemplo donde se aplica formato al parrafo que está después de "img" 
+        o sea adyancente a "img"
+        B) Luego otro ejemplo de Selector tipo Clase ".caja"
+        C) Seguido de un tipo Selector Clase combinado con Adyacente
+        D) Para finalizar un Selector Identificador o Selector ID declarado
+        con "#enlances" -->
+
+    <style>
+        
+        img+p {
+            color: red;
+            text-align: justify;
+            font-size: 25px;
+        }
+
+        .caja {
+            background-color: orange;
+            width: 100%;
+            height: 100px;
+            padding: 5px;
+        }
+
+        .caja+p {
+            color: blue;
+        }
+
+        #enlaces {
+            color: brown;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>SELECTOR ADYACENTE</header>
+    <nav></nav>
+    <h1>ENCABEZADO H1</h1>
+    <section>
+        <article>
+            <p>PARRAFO 1: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque labore voluptatibus
+                repellendus ratione saepe ullam quod, explicabo asperiores fugit, autem aspernatur nostrum modi ad magnam nobis id quidem
+                officiis totam assumenda. Voluptatibus maiores cupiditate aut, qui ratione illo facere sit reprehenderit
+                voluptatum iusto vero. Placeat tenetur laborum temporibus veritatis possimus.</p>
+            <img src="https://www.uth.hn/wp-content/uploads/2023/02/cropped-logo-web-1.png">
+            <p>PARRAFO 2 es adyacente a "img": Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+                repudiandae officiis natus adipisci laudantium ipsum saepe! Quidem ipsa aliquam dolorem eos explicabo
+                tempora sint fuga? Odit rem unde dolorum libero minima ea voluptatum, quis labore laborum consequatur a in, iste nam temporibus tempore
+                corporis! Numquam dicta perferendis nulla quod doloremque.</p>
+            <p>PARRAFO 3: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque labore voluptatibus
+                repellendus ratione saepe ullam quod, explicabo asperiores fugit, autem aspernatur nostrum modi ad magnam nobis id quidem
+                officiis totam assumenda. Voluptatibus maiores cupiditate aut, qui ratione illo facere sit reprehenderit
+                voluptatum iusto vero. Placeat tenetur laborum temporibus veritatis possimus.</p>
+        </article>
+        <article>
+            <!-- Ejemplo de Selector tipo Clase-->
+            <div class="caja">
+                <p>PARRAFO 4 es tipo Clase: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque labore voluptatibus
+                    repellendus ratione saepe ullam quod, explicabo asperiores fugit, autem aspernatur nostrum modi ad magnam nobis id
+                    quidem officiis totam assumenda. Voluptatibus maiores cupiditate aut, qui ratione illo facere sit
+                    reprehenderit voluptatum iusto vero. Placeat tenetur laborum temporibus veritatis possimus.</p>
+            </div>
+            <p>PARRAFO 5 es Adyacente al tipo Clase: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque labore voluptatibus
+                repellendus ratione saepe ullam quod, explicabo asperiores fugit, autem aspernatur nostrum modi ad magnam nobis id quidem
+                officiis totam assumenda. Voluptatibus maiores cupiditate aut, qui ratione illo facere sit reprehenderit
+                voluptatum iusto vero. Placeat tenetur laborum temporibus veritatis possimus.</p>
+            <p>PARRAFO 6: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque labore voluptatibus
+                repellendus ratione saepe ullam quod, explicabo asperiores fugit, autem aspernatur nostrum modi ad magnam nobis id quidem
+                officiis totam assumenda. Voluptatibus maiores cupiditate aut, qui ratione illo facere sit reprehenderit
+                voluptatum iusto vero. Placeat tenetur laborum temporibus veritatis possimus.</p>
+        </article>
+        <article>
+            <!-- Ejemplo de Selector ID declarado arriba con # y aquí con id="" -->
+            <a id="enlaces" href="https://www.google.com" target="_blank">Ir a sitio web de google</a>
+        </article>
+    </section>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>

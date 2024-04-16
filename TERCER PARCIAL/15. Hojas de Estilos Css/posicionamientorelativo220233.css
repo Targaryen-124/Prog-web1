@@ -1,0 +1,34 @@
+/*
+POSICIONAMIENTO RELATIVO
+*/
+
+*{
+    margin:15px;
+
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    padding:10px;
+}
+
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    /*top: ;
+    bottom:;
+    right:;*/
+    left:400px;
+}
+
+.hijo{
+    position: relative;
+    top: 20px;
+    /*bottom:;
+    right:;*/
+    left:60px;
+}

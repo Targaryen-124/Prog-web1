@@ -1,0 +1,23 @@
+/*
+POSICIONAMIENTO RELATIVO
+*/
+
+*{
+    margin:15px;
+
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    padding:10px;
+}
+
+.caja{
+    position: relative;
+    /*top: ;
+    bottom:;
+    right:;*/
+    left:400px;
+}

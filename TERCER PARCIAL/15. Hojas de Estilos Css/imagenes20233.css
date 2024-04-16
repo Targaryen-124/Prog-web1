@@ -1,0 +1,76 @@
+/*
+Aplicado a imagenes CSS EXTERNO
+*/
+
+*{
+    margin:20px;
+}
+
+ /*
+body{
+    background-color: url('imagenes/fondo.png');
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}*/
+
+img{
+    /* 
+    TRANSPARENCIA
+    opacity 
+    los valores van de 0 a 1
+    0 transparencia
+    1 opaco   
+    */
+    opacity: 0.9;
+
+    /*
+    BORDES
+    border_radius: ;
+    valores en px o en %
+    border-radius: 20px;
+    border-radius: 20px / 50%;
+    */
+    border-radius: 15%;
+
+    /* 
+    ROTACIÓN
+    transform: rotate(20deg);
+    */
+    transform: rotate(-3deg);
+
+}
+
+/*
+SOMBRAS
+    box-shadow(primer, segundo, tercer, cuarto, quinto );
+    primer  parametro : desplazamiento eje x
+    segundo parametro : desplazamiento eje y
+    tercer parametro  : difuminacion no puede llevar valores negativos
+    cuarto parametro  : expansión
+    quinto parametro  : color
+*/
+img:hover{
+    box-shadow: 8px 8px 5px 5px red;
+}
+
+.filtros{
+
+    /* Escala de Grises */
+    filter:grayscale(100%);
+
+    /*Sephia 
+    filter:sepia(100%); */
+
+    /* Desefonque 
+    filter:blur(2px); */
+
+    /* brillo 
+    filter:brightness(40%); */
+
+    /*contraste 
+    filter:contrast(50%); */
+
+    /* saturación 
+    filter:saturate(30%);*/
+}

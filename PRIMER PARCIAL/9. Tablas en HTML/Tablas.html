@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--Tablas en HTML-->
+<html>
+    <head>
+        <title>Tablas en HT>ML</title>
+        <meta charset="utf-">
+    </head>
+    <body>
+        <header>Tablas en HTML</header>
+        <nav></nav>
+        <section>
+            <article>
+            <!-- 
+                <table></table> tabla
+                <caption></caption> titulo
+                <tr></tr> tablerow Fila
+                <th></th> tableheader Encabezado
+                <td></td> tabledata Columna
+                &nbsp; sin valor
+                border para establecer el grosor del borde
+                bordercolor para establecer el color (hexa, rgb, ingles)
+                align para la alineacion
+                Atributo en rojo=ya so se utiliza
+            -->
+                <table border="1" bordercolor="red" align="center">
+                    <caption>Tabla # 1</caption>
+                    <tr>
+                        <th>Enero</th>
+                        <th>Febrero</th>
+                        <th>Marzo</th>
+                    </tr>
+                    <tr>
+                        <td>10,000</td>
+                        <td>20,000</td>
+                        <td>45,000</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>30,000</td>
+                        <td>44,000</td>
+                    </tr>
+                </table>
+            </article>
+            <br><br><br> <!--Espacios Entre tablas-->
+            <article>
+            <!-- 
+                <table></table> tabla
+                <thead> Encabezado
+                <tbody> Cuerpo
+                <tfoot> Pie
+                <caption></caption> titulo
+                <tr></tr> tablerow Fila
+                <th></th> tableheader Encabezado
+                <td></td> tabledata Columna
+                &nbsp; sin valor
+                border para establecer el grosor del borde
+                bordercolor para establecer el color (hexa, rgb, ingles)
+                align para la alineacion
+                Atributo en rojo=ya so se utiliza
+            -->
+                <table border="1" bordercolor="green" align="center">
+                    <caption>Tabla # 2 (Segmentacion HTML5)</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Enero</th>
+                            <th>Febrero</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SOFTWARE</td>
+                            <td>20,000</td>
+                            <td>40,000</td>
+                        </tr>
+                        <tr>
+                            <td>HARDWARE</td>
+                            <td>80,000</td>
+                            <td>150,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><b>TOTALES</b></td>
+                            <td><b>100,000</b></td>
+                            <td><b>190,000</b></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <br><br><br>
+            <article>
+                <table border="1" bordercolor="yellow" align="center">
+                    <caption>Tabla # 3 (Tabla padre/hijo)</caption>
+                    <tbody>
+                        <tr>
+                            <td>UTH</td>
+                            <td>
+                                <table border="1" bordercolor="red" align="center">
+                                    <tr>
+                                        <td>UNITEC</td>
+                                        <td>USAP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UNICAH</td>
+                                        <td>UNAH</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>METROPOLITANA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <br><br><br>
+        </article>
+        <br><br><br>
+        <article>
+            <!--colspan=" " para fusionar columnas
+                rowspan=" " para fusionar filas
+            -->
+            <table border="1" bordercolor="red" align="center" width="50%">
+                <caption>Tabla # 4 (Tablas Avanzadas)</caption>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="2">&nbsp;</td>
+                        <td rowspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                     </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        </section>
+        <aside></aside>
+        <footer></footer>
+    </body>
+</html>

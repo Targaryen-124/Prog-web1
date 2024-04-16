@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--Segundo Examen YP202110011064-->
+<html>
+
+<head>
+    <title>Segundo Examen YP202110011064</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Yohana Padilla">
+    <meta name="description" content="Segundo Examen">
+    <meta name="keywords" content="Segundo,Examen">
+</head>
+
+<body>
+    <header>Segundo Examen YP202110011064</header>
+    <nav></nav>
+    <section>
+        <article>
+            <form name="frmformularios" id="frmformularios" method="get" action="">
+                <table border="1px" bordercolor="blue" align="center">
+                    <caption></caption>
+                    <tr>
+                        <th colspan="1">
+                            <img src="/EXAMEN 2/imagenes/Logo.png" alt="logo">
+                        </th>
+                        <th colspan="6">SOLICITUD DE PRESTACIONES ECONOMICAS</th>
+                        <th colspan="2">Formulario 1040 (version 01)</th>
+                    </tr>
+                    <tr>
+                        <td colspan="9">I. INFORMACION DEL ASEGURADO TITULAR</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <label for="chk1">DATOS DEL ASEGURADO TITULAR:</label>
+                            <input type="checkbox" name="chk1" id="chk1" value="1" required>DNI
+                            <input type="checkbox" name="chk2" id="chk2" value="1">CARNET DE EXTRANJERIA
+                            <input type="checkbox" name="chk3" id="chk3" value="1">PASAPORTE
+                        </td>
+                        <td colspan="3">
+                            NUMERO<input name="txtnum1" id="txtnum1" type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            APELLIDO PATERNO<input name="txtpaterno" id="txtpaterno" type="text" required minlength="5"
+                                maxlength="45" pattern="[a-z ]{5,45}" title="APELLIDO PATERNO">
+                        </td>
+                        <td colspan="3">
+                            APELLIDO MATERNO<input name="txtmaterno" id="txtmaterno" type="text" required minlength="5"
+                                maxlength="45" pattern="[a-z ]{5,45}" title="APELLIDO MATERNO">
+                        </td>
+                        <td colspan="3">
+                            NOMBRES<input name="txtnombres" id="txtnombres" type="text" required minlength="5"
+                                maxlength="45" pattern="[a-z ]{5,45}" title="NOMBRES">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <label for="chk4">DATOS DEL EMPLEADOR:</label>
+                            <input type="checkbox" name="chk4" id="chk4" value="1">RUC
+                            <input type="checkbox" name="chk5" id="chk5" value="1">CIE (COD INSCRIP EMPLEADOR TRABAJADOR
+                            DEL HOGAR TH)
+                        </td>
+                        <td colspan="3">
+                            NUMERO<input name="txtnum2" id="txtnum2" type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <label for="txtemail">CORREO ELECTRONICO:</label>
+                            <input type="email" name="txtemail" id="txtemail">
+                        </td>
+                        <td colspan="4">
+                            <label for="txttel1">TELEFONO CONTACTO:</label>
+                            <input type="tel" name="txttel1" id="txttel1"
+                                pattern="[+0-9]{4}/[0-9]{4}/[0-9]{2}/[0-9]{2}">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table border="1px" bordercolor="blue" align="center" width="75%">
+                    <tr>
+                        <td colspan="7">II. INFORMACION DEL BENEFICIARIO solo lactancia madre derechohabiente o sepelio
+                            (familiar directo)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label for="chk6">DATOS DEL ASEGURADO TITULAR:</label>
+                            <input type="checkbox" name="chk6" id="chk6" value="1" required>DNI
+                            <input type="checkbox" name="chk7" id="chk7" value="1">CARNET DE EXTRANJERIA
+                        </td>
+                        <td colspan="3">
+                            NUMERO<input name="txtnum3" id="txtnum3" type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            APELLIDO PATERNO<input name="txtpaterno1" id="txtpaterno1" type="text" required
+                                minlength="5" maxlength="45" pattern="[a-z ]{5,45}" title="APELLIDO PATERNO">
+                        </td>
+                        <td colspan="2">
+                            APELLIDO MATERNO<input name="txtmaterno1" id="txtmaterno1" type="text" required
+                                minlength="5" maxlength="45" pattern="[a-z ]{5,45}" title="APELLIDO MATERNO">
+                        </td>
+                        <td colspan="3">
+                            NOMBRES<input name="txtnombres1" id="txtnombres1" type="text" required minlength="5"
+                                maxlength="45" pattern="[a-z ]{5,45}" title="NOMBRES">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <label for="txtemail1">CORREO ELECTRONICO:</label>
+                            <input type="email" name="txtemail1" id="txtemail1">
+                        </td>
+                        <td colspan="3">
+                            <label for="txttel2">TELEFONO CONTACTO:</label>
+                            <input type="tel" name="txttel2" id="txttel2"
+                                pattern="[+0-9]{4}/[0-9]{4}/[0-9]{2}/[0-9]{2}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <label for="chk6">PARENTESCO (familiar directo):</label>
+                            <input type="checkbox" name="chk8" id="chk8" value="1" required>CONYUGE
+                            <input type="checkbox" name="chk9" id="chk9" value="1">CONCUBINO(A)
+                            <input type="checkbox" name="chk10" id="chk10" value="1">HERMANO(A)
+                            <input type="checkbox" name="chk11" id="chk11" value="1">PADRES
+                            <input type="checkbox" name="chk12" id="chk12" value="1">OTRO:...............
+                            <input type="checkbox" name="chk11" id="chk11" value="1">TERCERO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">SOLO SI EL BENEFICIARIO ES TERCERO</td>
+                        <td colspan="3" rowspan="2">FIRMA</td>
+                    </tr>
+                    <tr>
+                        <td>NOMBRE DE FAMILIAR QUE AUTORIZA<input name="txtaut1" id="txtaut1" type="text" required></td>
+                        <td>NUMERO DE DOCUMENTO DE IDENTIDAD<input name="txtid1" id="txtid1" type="text" required></td>
+                    </tr>
+                </table>
+                <br>
+                <table border="1px" bordercolor="blue" align="center" width="75%">
+                    <tr>
+                        <td colspan="7">III. SOLICITUD DE PRESTACIONES ECONOMICAS:
+                            <label for="chk6">PARENTESCO (familiar directo):</label>
+                            <input type="checkbox" name="chk12" id="chk12" value="1" required>PAGO DIRECTO
+                            <input type="checkbox" name="chk13" id="chk13" value="1">REEMBOLSO
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <input type="submit" name="btenviar" id="btenviar" value="Enviar">
+                <input type="reset" name="btreset" id="btreset" value="Limpiar">
+        </article>
+        </form>
+    </section>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>

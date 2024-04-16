@@ -1,0 +1,12 @@
+https://edificaweb.com/iconos/favicon2.ico
+https://edificaweb.com/iconos/logouth.png
+https://edificaweb.com/iconos/logogif.gif
+https://edificaweb.com/iconos/browserstack-logo.svg
+https://edificaweb.com/iconos/favicon-animado.svg
+iana image/vnd.microsoft.icon
+w3c
+Antes shorcut
+Ahora icon
+<head>
+<link rel="icon" type="image/png" href="imagen.png" sizes="48x48">
+</head>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- SELECTOR DE ID EN CSS 
+Se declara con # y se llama con id=""
+Ejemplo: #enlaces{...} y se llama con id="enlaces"-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Selector de ID en CSS</title>
+    <style>
+        * {
+            margin: 10px 10px 10px 10px;
+            font-size: 16px;
+        }
+
+        p {
+            color: orange;
+            font-size: 16px;
+        }
+
+        p a {
+            color: black;
+        }
+
+        p a:hover {
+            font-size: 35px;
+            background-color: yellow;
+        }
+
+        .grupoparrafos{
+            color:red;
+            text-align: justify;
+            font-size: 19px;
+        }
+
+        .formatodebotones{
+            color: white;
+            background-color: black;
+            padding: 7px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .formatodebotones:hover{
+            color: black;
+            background-color: orange;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        #enlaces {
+            color: brown;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>SELECTOR TIPO ID</header>
+    <nav></nav>
+    <h1>ENCABEZADO H1</h1>
+    <section>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate unde dolore nobis repudiandae
+                recusandae eos, impedit consequuntur itaque? Iusto in ea vero enim, ipsam repellat est dolore!
+                Molestiae, esse dignissimos voluptas voluptates incidunt repellendus eum saepe rem fugit facilis
+                voluptatibus error fugiat eveniet. Quaerat voluptatem recusandae incidunt. Expedita placeat blanditiis
+                cumque doloremque natus fugiat molestias vero magni accusamus qui alias, officiis nihil, modi temporibus
+                suscipit, illo distinctio. Rerum, provident. Corrupti quasi ipsum adipisci reiciendis vel a odio
+                distinctio fugiat, perferendis soluta corporis vero aperiam necessitatibus obcaecati ab asperiores
+                officiis amet dolorem eligendi mollitia totam libero aut. Perferendis enim incidunt consequuntur!
+                <br>
+                <a href="https://www.uth.hn" target="_blank">Sitio Web de UTH</a>
+            </p>
+        </article>
+        <article>
+            <p class="grupoparrafos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate unde dolore nobis repudiandae
+                recusandae eos, impedit consequuntur itaque? Iusto in ea vero enim, ipsam repellat est dolore!
+                Molestiae, esse dignissimos voluptas voluptates incidunt repellendus eum saepe rem fugit facilis
+                voluptatibus error fugiat eveniet. Quaerat voluptatem recusandae incidunt. Expedita placeat blanditiis
+                cumque doloremque natus fugiat molestias vero magni accusamus qui alias, officiis nihil, modi temporibus
+                suscipit, illo distinctio. Rerum, provident. Corrupti quasi ipsum adipisci reiciendis vel a odio
+                distinctio fugiat, perferendis soluta corporis vero aperiam necessitatibus obcaecati ab asperiores
+                officiis amet dolorem eligendi mollitia totam libero aut. Perferendis enim incidunt consequuntur!
+                <br>
+            </p>
+        </article>
+        <article>
+            <!-- Aquí llamamos el Selector ID declarado como #enlaces{...} arriba con id="enlances"-->
+            <a id="enlaces" href="https://www.bing.com/" target="_blank">Motor de búsqueda BING</a>
+        </article>
+        <article>
+            <H2 class="grupoparrafos">ENCABEZADO H2</H2>
+        </article>
+        <article>
+            <button class="formatodebotones" onclick="alert('ACEPTAR')">ACEPTAR</button>
+            <button class="formatodebotones" onclick="alert('CANCELAR')">CANCELAR</button>
+        </article>
+    </section>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>

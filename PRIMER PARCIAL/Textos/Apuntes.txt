@@ -1,0 +1,65 @@
+ENCABEZADOS EN HTML
+Etiquetas o Tags
+
+<hn>
+h=header
+n=number  1-6
+
+Encabezados
+<h1> 32.00px
+<h2> 24.00px
+<h3> 18.72px
+<h4> 16.00px
+<h5> 13.28px
+<h6> 10.72px
+
+ <meta charset="utf-8"><!--Codificacion de caracteres, Informacion del Sitio ASCII mas adicionales-->
+<meta name="description" content="Sistema de Codificacion de caracteres">
+<meta name="author" content="Yohana Padilla">
+<meta name="keywords" content="Html, Metadatos"> 
+
+Asentuar antes
+Letra &aacute;
+
+Asentuar ahora
+Letra á
+
+<b>LÍNEA</b> Negrita
+<i>LÍNEA</i> Cursiva
+<u>LÍNEA</u> Subrayado
+s>LÍNEA</s> Tachado
+
+<p style="text-align:justify;"> Alinear texto
+
+Listas
+<ol></ol> Lista Ordenada <ol reversed> Ordenada reversa
+<li></li> Elemento de lista
+<li value="5"> Comenzar lista en 5
+<ol type="A"> Letras May
+<ol type="a"> Letras Min
+<ol type="A" start="4"> Empieza 4ta letra
+<ol type="a" start="6"> Empieza 6ta letra
+<ol type="I"> Romano may
+<ol type="i"> Romani min
+<ol type="I" start="5"> Empieza en 5
+<ol type="i" start="5"> Empieza en 5
+<ul></ul> Lista no Ordenada
+
+Hipervinculos
+Ruta Absoluta <a href="https://www.undef.edu.ar" title="Ir a Universidad Facultad de la Armada" target="_blank">Ir a Universidad Facultad de la Armada</a>
+Ruta Relativa <a href="Frutas/Frutas.html" title="Lista de Frutas">Lista de Frutas</a>
+A Correo <a href="mailto:ypadilla1988gmail.com" title="Redactar Correo">Redactar Correo</a>
+Mensaje 1 Linea <a href="javascript:alert('UTH');">Ver Mensaje</a>
+Mensaje 2 Lineas <a href="javascript:alert('UTH\nTU UNIVERSIDAD');">Ver Mensaje2</a>
+
+Marcadores
+<a href="Marcadores.html" title="Inicio">Inicio</a>
+<a name="informacion"></a>
+
+Imagenes
+<img src="https://www.edificaweb.com/iconos/favicon.png" alt="logo favicon">
+<img src="https://www.edificaweb.com/iconos/favicon-animado.svg" alt="logo svg" width="25%">
+<img src="https://uth.hn/canvas/img/UTH2.png" alt="logo uth" width="495px" height="382.5px">
+<body style="background-image: url('Imagenes/fondo.png');">
+
+

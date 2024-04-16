@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--SELECTOR DE ATRIBUTO 
+    Por Edwyn Sanders
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores de atributo en CSS</title>
+</head>
+<style>
+    /*
+    Aplicando color rojo a todos los enlaces que tienen que ver con el atributo href
+    [href] {
+        color: red;
+    } 
+    
+    Aplicando color verde a los hipervinculos que tienen el valor exacto de https://www.example.com
+    [href="https://www.example.com"] {
+      color: green;
+    }
+
+    Aplicando color amarillo  a los hipervinculos que terminan con la palabra contacto
+    [href$="contacto"]{
+        color:yellow;
+    }
+    */
+    aplicando color cafe aquellos hipervinculos que termina con la palabra menu en el atributo title
+    a[title^="menu"]{
+        color:brown;
+    }   
+
+
+</style>
+
+
+
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <article>
+            <a href="https://www.example.com">Enlace 1</a>
+            <a href="https://www.example.com/contacto">Enlace 2</a>
+            <a href="https://www.example.com/nosotros">Enlace 3</a>
+            <a href="https://www.google.com">Google</a>
+            <a href="frutas/frutas.html" title="menu de frutas">frutas</a>
+            <a href="francisco/fran.html" title="san francisco">francisco</a>
+
+        </article>
+    </section>
+    <footer></footer>
+
+</body>
+
+</html>

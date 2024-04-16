@@ -1,0 +1,52 @@
+/*
+
+CSS Aplicado a Imagenes u Otros Elementos
+
+*/
+
+*{
+    margin: 20px;
+}
+
+body{
+    background-image: url('images/Fondo.png');
+    /*background-repeat: repeat;*/
+    /*background-repeat: repeat-x;*/
+    /*background-repeat: repeat-y;*/
+    /*background-repeat: no-repeat;*/
+}
+
+img{
+    /*Transparencia
+        opacity - valores de 0 a 1
+        0 totalmente transparente
+        1 sin transparencia
+    */
+    opacity: 0.75;
+
+    /*Bordes
+        border-radius: ; px o %
+    */
+    /*border-radius: 20px 0px 20px 0px;*/
+    /*border-radius: 50%;*/
+    border-radius: 20px / 50%;
+
+    /*Rotacion
+        Izq Val neg 0-360
+        Der Val pos 0-360
+    */
+    /*transform: rotate(80deg);*/
+    transform: rotate(-20deg);
+}
+
+img:hover{
+    /*Sombras
+        box-shadow(p1,p2,p3,p4,p5);
+        p1=desplazamiento eje X
+        p2=desplazamiento eje y
+        p3=difuminacion (No val. negativos)
+        p4=expansion
+        p5=color
+    */
+        box-shadow: 5px 5px 10px 8px red;
+}
